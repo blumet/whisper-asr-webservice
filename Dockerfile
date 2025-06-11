@@ -24,4 +24,4 @@ RUN poetry install
 
 EXPOSE 10000
 
-ENTRYPOINT ["whisper-asr-webservice"]
+CMD ["poetry", "run", "whisper-asr-webservice", "--host", "0.0.0.0", "--port", "10000"]
