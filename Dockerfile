@@ -22,6 +22,6 @@ COPY --from=swagger-ui /usr/share/nginx/html/swagger-ui-bundle.js swagger-ui-ass
 RUN poetry config virtualenvs.in-project true
 RUN poetry install
 
-EXPOSE 9000
+EXPOSE 10000
 
 ENTRYPOINT ["whisper-asr-webservice"]
