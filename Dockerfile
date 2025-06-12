@@ -24,4 +24,4 @@ RUN poetry install
 
 EXPOSE 10000
 
-CMD ["poetry", "run", "uvicorn", "whisper_asr_webservice.webservice:app", "--host", "0.0.0.0", "--port", "10000"]
+CMD ["poetry", "run", "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "10000"]
